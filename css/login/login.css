@@ -1,0 +1,74 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    animation: anime .5s forwards linear;
+}
+
+@keyframes anime {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.loginContainer {
+    margin-left: 3%;
+    margin-top: 3rem;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.loginContainer h1 {
+    font-size: 2.5rem;
+    color: #375D81;
+}
+
+.loginContainer p {
+    width: 40rem;
+    margin-bottom: 2rem;
+}
+
+.note {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+#LoginForm_username,
+#LoginForm_password {
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    height: 2rem;
+    width: 50%;
+    max-width: 20rem;
+    padding-left: .3rem;
+    background-color: #e6e6e6;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.row input {
+    margin-top: 1rem;
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    background-color: #375D81;
+    color: white;
+    cursor: pointer;
+    border-radius: .5rem;
+    display: block;
+}
+
+.image {
+    width: 600px;
+    height: 290px;
+    margin-top: 4.5rem;
+    margin-right: 3%;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 10px #C4D7ED;
+}

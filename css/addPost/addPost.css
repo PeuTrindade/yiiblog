@@ -1,0 +1,55 @@
+.addPostContainer,
+.updatePostContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+    margin-top: 3rem;
+}
+
+.addPostContainer h2,
+.updatePostContainer h2 {
+    font-size: 2rem;
+    color: #375D81;
+}
+
+.form {
+    margin-top: 2rem;
+}
+
+.row label{
+    color: #375D81;
+}
+
+#Post_title,
+#Post_content,
+#Post_tags {
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    padding-left: .3rem;
+}
+
+#Post_title,
+#Post_tags {
+    height: 2rem;
+}
+
+#Post_content {
+    padding-top: .3rem;
+}
+
+#Post_image {
+    display: none;
+}
+
+.row input[type=submit] {
+    margin-top: 2rem;
+    width: 10rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    background-color: #375D81;
+    color: white;
+    cursor: pointer;
+}
