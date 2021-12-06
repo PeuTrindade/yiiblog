@@ -36,16 +36,24 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content, image, tags', 'required'),
+			array('title, content, tags', 'required'),
+			array('image', 'required', 'on' => 'create'),
 			array('title', 'length', 'max'=>128),
 			array('tags','match','pattern'=>'/^[\w\s,]+$/','message'=>'Tags só podem conter palavras.'),
-			array('image','file','types'=>'jpg, gif, png', 'allowEmpty'=>false, 'on'=>'update'),
+			array('image','file','types'=>'jpg, gif, png', 'allowEmpty'=>false, 'on'=>'create'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('tags','normalizeTags'),
 			array('title','safe','on'=>'search'),
 		);
 	}
+
+	public function scenarios() {
+        $scenarios = parent::scenarios();
+        $scenarios['create'] = ['image'];
+		
+		return $scenarios;
+    }
 
 	public function normalizeTags($attr,$params) {
 		$this->tags = Tag::array2string(array_unique(Tag::string2array($this->tags)));
@@ -141,5 +149,21 @@ class Post extends CActiveRecord
 		$picture_file = '';
 		$tmpImage = Yii::getPathOfAlias('webroot.uploaded').$picture_name;
 		$picture_file->saveAs($tmpImage);
+	}
+
+	public function getCurrentDate(){
+		date_default_timezone_set('America/Sao_Paulo');
+	    $this->create_time = date('y/m/d');
+		$this->update_time = date('y/m/d');
+	}
+
+	public function updateDate(){
+		date_default_timezone_set('America/Sao_Paulo');
+		$this->update_time = date('y/m/d');
+	}
+
+	public function reverseDate(){
+		$this->create_time = implode('/', array_reverse(explode('-', $this->create_time)));
+		$this->update_time = implode('/', array_reverse(explode('-', $this->update_time)));
 	}
 }

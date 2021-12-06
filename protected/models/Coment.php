@@ -111,6 +111,14 @@ class Coment extends CActiveRecord
 		return parent::model($className);
 	}
 
+	public function getCurrentDate(){
+		date_default_timezone_set('America/Sao_Paulo');
+	    $this->create_time = date('y/m/d');
+	}
+
+	public function reverseDate(){
+		$this->create_time = implode('/', array_reverse(explode('-', $this->create_time)));
+	}
 	// protected function beforeSave(){
 	// 	if(parent::beforeSave()){
 	// 		if($this->isNewRecord){

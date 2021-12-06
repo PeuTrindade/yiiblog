@@ -32,7 +32,6 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_NONE;
 			session_start();
 			$_SESSION['logged'] = true;
-			$_SESSION['user'] = $this->username;
 		}
 		return $this->errorCode==self::ERROR_NONE;
 	}

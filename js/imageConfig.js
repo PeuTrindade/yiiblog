@@ -3,7 +3,6 @@ let imageRow = document.getElementById("imageRow");
 let imageInfo = document.getElementById('imageInfo').value;
 let label = imageRow.children[1];
 
-
 window.onload = () => {
     label.style = 'background: #375D81 ;color: white ; display:inline-block; padding: .6rem; border-radius: .5rem; margin-bottom: 1rem; margin-top: 1rem; cursor: pointer';
 

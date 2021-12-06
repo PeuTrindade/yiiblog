@@ -40,6 +40,19 @@ session_start();
 				));
 			?>
 		</div>
+		<div class='sideBar'>
+			<form action='./index.php?r=site/index' method='POST' class='search'>
+				<input name='title_search' type='text' placeholder='Busque por um título'/> <br>
+				<button name='search_btn'>Pesquisar</button>
+			</form>
+			<h3>Tags</h3>
+			<ul id='tags' class='tags'>
+				<li><a class='tag' href='index.php?r=site/&tag=Empreendedorismo'>Empreendedorismo</a></li>
+				<li><a class='tag' href='index.php?r=site/&tag=Tecnologia'>Tecnologia</a></li>
+				<li><a class='tag' href='index.php?r=site/&tag=Trabalho'>Trabalho</a></li>
+			</ul>
+			<a id='deleteTags' href='index.php?r=site/index' class='deleteTagsDisabled'>Deletar</a>
+		</div>
 	</section>
 	<section id='sobre' class='aboutContainer'>
         <div class='aboutText'>
@@ -55,3 +68,4 @@ session_start();
     </section>
 	<?php } ?>
 </section>
+<script src='./js/tagsConfig.js'></script>

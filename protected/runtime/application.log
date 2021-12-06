@@ -7430,3 +7430,1949 @@ Stack trace:
 REQUEST_URI=/yiiblog/index.php?r=post/view&id=28
 HTTP_REFERER=http://localhost/yiiblog/index.php?r=site/index
 ---
+2021/12/06 01:03:36 [error] [php] Undefined index: title_search (C:\wamp\www\yiiblog\protected\views\site\index.php:44)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#1 C:\Users\pedri\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#2 C:\Users\pedri\yii\framework\web\CController.php(872): SiteController->renderFile()
+#3 C:\Users\pedri\yii\framework\web\CController.php(785): SiteController->renderPartial()
+#4 C:\wamp\www\yiiblog\protected\controllers\SiteController.php(49): SiteController->render()
+#5 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Users\pedri\yii\framework\web\CController.php(286): SiteController->runAction()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=site/index
+in C:\wamp\www\yiiblog\protected\views\site\index.php (44)
+in C:\wamp\www\yiiblog\protected\controllers\SiteController.php (49)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 01:18:35 [error] [php] Undefined variable: model (C:\wamp\www\yiiblog\protected\controllers\SiteController.php:50)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\pedri\yii\framework\web\CController.php(286): SiteController->runAction()
+#3 C:\Users\pedri\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#5 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=site/index
+in C:\wamp\www\yiiblog\protected\controllers\SiteController.php (50)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 01:18:41 [error] [exception.CException] CException: Property "SiteController.model" is not defined. in C:\Users\pedri\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\SiteController.php(50): CComponent->__get('model')
+#1 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\pedri\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#7 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yiiblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/view&id=41
+---
+2021/12/06 01:25:04 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function PostController::reverseDate(), 0 passed in C:\wamp\www\yiiblog\protected\controllers\PostController.php on line 54 and exactly 1 expected in C:\wamp\www\yiiblog\protected\controllers\PostController.php:267
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\PostController.php(54): PostController->reverseDate()
+#1 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=32
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=site/index
+---
+2021/12/06 01:30:31 [error] [exception.Error] Error: Cannot use object of type CDbCriteria as array in C:\wamp\www\yiiblog\protected\controllers\SiteController.php:50
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\Users\pedri\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#5 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#6 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/yiiblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/view&id=32
+---
+2021/12/06 01:30:57 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in C:\wamp\www\yiiblog\protected\controllers\SiteController.php:50
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#2 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiiblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/view&id=32
+---
+2021/12/06 01:31:21 [error] [exception.Error] Error: Cannot use object of type CDbCriteria as array in C:\wamp\www\yiiblog\protected\controllers\SiteController.php:50
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\Users\pedri\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#5 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#6 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/yiiblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/view&id=32
+---
+2021/12/06 01:31:51 [error] [php] session_start(): Cannot start session when headers already sent (C:\wamp\www\yiiblog\protected\views\site\index.php:6)
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\views\site\index.php(6): session_start()
+#1 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#2 C:\Users\pedri\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(872): SiteController->renderFile()
+#4 C:\Users\pedri\yii\framework\web\CController.php(785): SiteController->renderPartial()
+#5 C:\wamp\www\yiiblog\protected\controllers\SiteController.php(52): SiteController->render()
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\Users\pedri\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\Users\pedri\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=site/index
+in C:\wamp\www\yiiblog\protected\views\site\index.php (6)
+in C:\wamp\www\yiiblog\protected\controllers\SiteController.php (52)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 01:33:21 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\Users\pedri\yii\framework\web\helpers\CHtml.php:118)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars()
+#1 C:\wamp\www\yiiblog\protected\controllers\SiteController.php(50): encode()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\Users\pedri\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=site/index
+in C:\wamp\www\yiiblog\protected\controllers\SiteController.php (50)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 01:33:46 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\Users\pedri\yii\framework\web\helpers\CHtml.php:118)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars()
+#1 C:\wamp\www\yiiblog\protected\controllers\SiteController.php(50): encode()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\Users\pedri\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=site/index
+in C:\wamp\www\yiiblog\protected\controllers\SiteController.php (50)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 01:33:47 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\Users\pedri\yii\framework\web\helpers\CHtml.php:118)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars()
+#1 C:\wamp\www\yiiblog\protected\controllers\SiteController.php(50): encode()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\Users\pedri\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=site/index
+in C:\wamp\www\yiiblog\protected\controllers\SiteController.php (50)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 01:33:54 [error] [exception.CException] CException: Property "CActiveDataProvider.title" is not defined. in C:\Users\pedri\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\SiteController.php(50): CComponent->__get('title')
+#1 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\pedri\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#7 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yiiblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/view&id=32
+---
+2021/12/06 10:35:30 [error] [exception.CException] CException: PostController and its behaviors do not have a method or closure named "reverseDate". in C:\Users\pedri\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\PostController.php(54): CComponent->__call('reverseDate', Array)
+#1 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=41
+HTTP_REFERER=http://localhost/yiiblog/
+---
+2021/12/06 10:41:29 [error] [exception.Error] Error: Cannot use object of type CActiveDataProvider as array in C:\wamp\www\yiiblog\protected\controllers\PostController.php:186
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:42:54 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\wamp\www\yiiblog\protected\controllers\PostController.php:224
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\PostController.php(186): PostController->loadModel()
+#1 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#2 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#12 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:43:45 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\wamp\www\yiiblog\protected\controllers\PostController.php:224
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\PostController.php(186): PostController->loadModel()
+#1 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#2 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#12 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:45:40 [error] [exception.CException] CException: Property "CActiveDataProvider._attributes" is not defined. in C:\Users\pedri\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\PostController.php(186): CComponent->__get('_attributes')
+#1 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#2 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#12 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:45:49 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in C:\wamp\www\yiiblog\protected\controllers\PostController.php:186
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#2 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:48:07 [error] [php] Indirect modification of overloaded property Post::$attributes has no effect (C:\wamp\www\yiiblog\protected\controllers\PostController.php:186)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/index
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (186)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:48:39 [error] [exception.Error] Error: Access to undeclared static property: Post::$attributes in C:\wamp\www\yiiblog\protected\controllers\PostController.php:186
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:50:34 [error] [php] Undefined variable: data (C:\wamp\www\yiiblog\protected\controllers\PostController.php:186)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/index
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (186)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:51:07 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\Users\pedri\yii\framework\web\helpers\CHtml.php:118)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(118): htmlspecialchars()
+#1 C:\wamp\www\yiiblog\protected\controllers\PostController.php(186): encode()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/index
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (186)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:55:24 [error] [exception.CException] CException: Post and its behaviors do not have a method or closure named "_models". in C:\Users\pedri\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(229): CComponent->__call('_models', Array)
+#1 C:\wamp\www\yiiblog\protected\controllers\PostController.php(186): CActiveRecord->__call('_models', Array)
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:55:36 [error] [exception.Error] Error: Call to undefined method Post::_models() in C:\wamp\www\yiiblog\protected\controllers\PostController.php:186
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:55:42 [error] [exception.Error] Error: Call to undefined method Post::_models() in C:\wamp\www\yiiblog\protected\controllers\PostController.php:186
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:56:12 [error] [exception.Error] Error: Call to undefined method CActiveRecord::_models() in C:\wamp\www\yiiblog\protected\controllers\PostController.php:186
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 10:56:26 [error] [php] Undefined variable: _models (C:\wamp\www\yiiblog\protected\controllers\PostController.php:186)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/index
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (186)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:56:36 [error] [php] Undefined variable: _models (C:\wamp\www\yiiblog\protected\controllers\PostController.php:186)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/index
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (186)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:58:40 [error] [exception.CException] CException: Property "Post._alias" is not defined. in C:\Users\pedri\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('_alias')
+#1 C:\wamp\www\yiiblog\protected\controllers\PostController.php(186): CActiveRecord->__get('_alias')
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 11:03:32 [error] [exception.CException] CException: Property "Post._models" is not defined. in C:\Users\pedri\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('_models')
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(761): CActiveRecord->__get('_models')
+#2 C:\wamp\www\yiiblog\protected\controllers\PostController.php(186): CActiveRecord->getAttributes()
+#3 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#4 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#14 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 11:04:57 [error] [php] Trying to get property '_attributes' of non-object (C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php:761)
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\PostController.php(186): Post->getAttributes()
+#1 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#2 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#6 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/index
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (186)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 11:05:01 [error] [php] Trying to get property 'attributes' of non-object (C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php:761)
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\PostController.php(186): Post->getAttributes()
+#1 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#2 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#6 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#7 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/index
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (186)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 11:10:27 [error] [exception.Error] Error: Call to a member function getData() on array in C:\Users\pedri\yii\framework\zii\widgets\CBaseListView.php:125
+Stack trace:
+#0 C:\Users\pedri\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#1 C:\Users\pedri\yii\framework\web\CBaseController.php(147): CListView->init()
+#2 C:\Users\pedri\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 C:\wamp\www\yiiblog\protected\views\post\index.php(18): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#5 C:\Users\pedri\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', Array, true)
+#6 C:\Users\pedri\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp\\www\\yii...', Array, true)
+#7 C:\Users\pedri\yii\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\yiiblog\protected\controllers\PostController.php(192): CController->render('index', Array)
+#9 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#10 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/index
+---
+2021/12/06 11:16:56 [error] [exception.CException] CException: Coment and its behaviors do not have a method or closure named "getData". in C:\Users\pedri\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getData', Array)
+#1 C:\wamp\www\yiiblog\protected\controllers\PostController.php(57): CActiveRecord->__call('getData', Array)
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=32
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=site/index
+---
+2021/12/06 11:25:12 [error] [exception.CException] CException: Coment and its behaviors do not have a method or closure named "getData". in C:\Users\pedri\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getData', Array)
+#1 C:\wamp\www\yiiblog\protected\controllers\PostController.php(56): CActiveRecord->__call('getData', Array)
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=32
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/view&id=32
+---
+2021/12/06 11:26:59 [error] [php] Undefined variable: coments (C:\wamp\www\yiiblog\protected\controllers\PostController.php:57)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=32
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (57)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 11:27:07 [error] [php] Array to string conversion (C:\Users\pedri\yii\framework\web\helpers\CHtml.php:2434)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(2730): modelName()
+#1 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(1532): resolveName()
+#2 C:\Users\pedri\yii\framework\web\widgets\CActiveForm.php(601): activeLabelEx()
+#3 C:\wamp\www\yiiblog\protected\views\coment\_form.php(21): CActiveForm->labelEx()
+#4 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#5 C:\Users\pedri\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\Users\pedri\yii\framework\web\CController.php(872): PostController->renderFile()
+#7 C:\wamp\www\yiiblog\protected\views\post\view.php(48): PostController->renderPartial()
+#8 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#9 C:\Users\pedri\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#10 C:\Users\pedri\yii\framework\web\CController.php(872): PostController->renderFile()
+#11 C:\Users\pedri\yii\framework\web\CController.php(785): PostController->renderPartial()
+#12 C:\wamp\www\yiiblog\protected\controllers\PostController.php(63): PostController->render()
+#13 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#14 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#16 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#18 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#19 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#22 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#23 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=32
+in C:\wamp\www\yiiblog\protected\views\coment\_form.php (21)
+in C:\wamp\www\yiiblog\protected\views\post\view.php (48)
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (63)
+2021/12/06 11:27:40 [error] [php] Array to string conversion (C:\Users\pedri\yii\framework\web\helpers\CHtml.php:2434)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(2730): modelName()
+#1 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(1532): resolveName()
+#2 C:\Users\pedri\yii\framework\web\widgets\CActiveForm.php(601): activeLabelEx()
+#3 C:\wamp\www\yiiblog\protected\views\coment\_form.php(21): CActiveForm->labelEx()
+#4 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#5 C:\Users\pedri\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\Users\pedri\yii\framework\web\CController.php(872): PostController->renderFile()
+#7 C:\wamp\www\yiiblog\protected\views\post\view.php(48): PostController->renderPartial()
+#8 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#9 C:\Users\pedri\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#10 C:\Users\pedri\yii\framework\web\CController.php(872): PostController->renderFile()
+#11 C:\Users\pedri\yii\framework\web\CController.php(785): PostController->renderPartial()
+#12 C:\wamp\www\yiiblog\protected\controllers\PostController.php(63): PostController->render()
+#13 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#14 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#16 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#18 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#19 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#22 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#23 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=32
+in C:\wamp\www\yiiblog\protected\views\coment\_form.php (21)
+in C:\wamp\www\yiiblog\protected\views\post\view.php (48)
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (63)
+2021/12/06 11:31:48 [error] [php] Array to string conversion (C:\Users\pedri\yii\framework\web\helpers\CHtml.php:2434)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(2730): modelName()
+#1 C:\Users\pedri\yii\framework\web\helpers\CHtml.php(1532): resolveName()
+#2 C:\Users\pedri\yii\framework\web\widgets\CActiveForm.php(601): activeLabelEx()
+#3 C:\wamp\www\yiiblog\protected\views\coment\_form.php(21): CActiveForm->labelEx()
+#4 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#5 C:\Users\pedri\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\Users\pedri\yii\framework\web\CController.php(872): PostController->renderFile()
+#7 C:\wamp\www\yiiblog\protected\views\post\view.php(48): PostController->renderPartial()
+#8 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#9 C:\Users\pedri\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#10 C:\Users\pedri\yii\framework\web\CController.php(872): PostController->renderFile()
+#11 C:\Users\pedri\yii\framework\web\CController.php(785): PostController->renderPartial()
+#12 C:\wamp\www\yiiblog\protected\controllers\PostController.php(64): PostController->render()
+#13 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#14 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#16 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#18 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#19 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#22 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#23 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=42
+in C:\wamp\www\yiiblog\protected\views\coment\_form.php (21)
+in C:\wamp\www\yiiblog\protected\views\post\view.php (48)
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (64)
+2021/12/06 11:32:59 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\yiiblog\protected\controllers\PostController.php:57)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (57)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 11:34:16 [error] [exception.CException] CException: Coment and its behaviors do not have a method or closure named "findByPost_id". in C:\Users\pedri\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(229): CComponent->__call('findByPost_id', Array)
+#1 C:\wamp\www\yiiblog\protected\controllers\PostController.php(56): CActiveRecord->__call('findByPost_id', Array)
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/view&id=42
+---
+2021/12/06 08:55:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=28.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 08:55:55 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=28 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('28', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('28')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=28
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=28
+---
+2021/12/06 08:56:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=28.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (141)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 08:56:31 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=28 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('28', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(141): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('28')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=28
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=28
+---
+2021/12/06 08:58:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=28.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 08:58:27 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=28 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('28', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('28')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=28
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=28
+---
+2021/12/06 09:08:29 [error] [php] Undefined index: image (C:\wamp\www\yiiblog\protected\controllers\PostController.php:140)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=28
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 09:13:40 [error] [php] Undefined index: image (C:\wamp\www\yiiblog\protected\controllers\PostController.php:140)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=28
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 09:13:46 [error] [php] Undefined index: name (C:\wamp\www\yiiblog\protected\controllers\PostController.php:140)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=28
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 09:14:43 [error] [exception.CException] CException: Property "Post.image_name" is not defined. in C:\Users\pedri\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(162): CComponent->__set('image_name', 'opa.jpg')
+#1 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->__set('image_name', 'opa.jpg')
+#2 [internal function]: PostController->actionUpdate('28')
+#3 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#4 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#5 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#14 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#15 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=28
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=28
+---
+2021/12/06 09:14:53 [error] [php] Indirect modification of overloaded property Post::$image has no effect (C:\wamp\www\yiiblog\protected\controllers\PostController.php:140)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=28
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 12:31:10 [error] [php] Undefined variable: coments (C:\wamp\www\yiiblog\protected\views\post\view.php:50)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#1 C:\Users\pedri\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#2 C:\Users\pedri\yii\framework\web\CController.php(872): PostController->renderFile()
+#3 C:\Users\pedri\yii\framework\web\CController.php(785): PostController->renderPartial()
+#4 C:\wamp\www\yiiblog\protected\controllers\PostController.php(62): PostController->render()
+#5 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#6 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=28
+in C:\wamp\www\yiiblog\protected\views\post\view.php (50)
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (62)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 12:31:37 [error] [php] Undefined variable: coments (C:\wamp\www\yiiblog\protected\views\post\_coments.php:1)
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#1 C:\Users\pedri\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#2 C:\Users\pedri\yii\framework\web\CController.php(872): PostController->renderFile()
+#3 C:\wamp\www\yiiblog\protected\views\post\view.php(40): PostController->renderPartial()
+#4 C:\Users\pedri\yii\framework\web\CBaseController.php(126): require()
+#5 C:\Users\pedri\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 C:\Users\pedri\yii\framework\web\CController.php(872): PostController->renderFile()
+#7 C:\Users\pedri\yii\framework\web\CController.php(785): PostController->renderPartial()
+#8 C:\wamp\www\yiiblog\protected\controllers\PostController.php(62): PostController->render()
+#9 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#10 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#12 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#14 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#15 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#18 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#19 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/view&id=28
+in C:\wamp\www\yiiblog\protected\views\post\_coments.php (1)
+in C:\wamp\www\yiiblog\protected\views\post\view.php (40)
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (62)
+2021/12/06 10:18:59 [error] [exception.Error] Error: Call to a member function save() on array in C:\wamp\www\yiiblog\protected\controllers\PostController.php:141
+Stack trace:
+#0 [internal function]: PostController->actionUpdate('42')
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:19:33 [error] [php] Undefined offset: 0 (C:\wamp\www\yiiblog\protected\controllers\PostController.php:141)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (141)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:20:05 [error] [exception.Error] Error: Call to a member function save() on string in C:\wamp\www\yiiblog\protected\controllers\PostController.php:142
+Stack trace:
+#0 [internal function]: PostController->actionUpdate('42')
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:21:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:21:27 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 13:24:36 [error] [php] Undefined index: title (C:\wamp\www\yiiblog\protected\controllers\PostController.php:131)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (131)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:24:58 [error] [php] Undefined index: title (C:\wamp\www\yiiblog\protected\controllers\PostController.php:131)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (131)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:26:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:26:06 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:26:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:26:15 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:27:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:27:07 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:27:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:27:19 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 13:28:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (125)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:28:14 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(125): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:28:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:28:43 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:29:24 [error] [php] Trying to get property 'title' of non-object (C:\wamp\www\yiiblog\protected\controllers\PostController.php:140)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:30:03 [error] [php] Undefined index: title (C:\wamp\www\yiiblog\protected\controllers\PostController.php:131)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (131)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:30:20 [error] [php] Indirect modification of overloaded property Post::$attributes has no effect (C:\wamp\www\yiiblog\protected\controllers\PostController.php:131)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (131)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:31:36 [error] [php] Indirect modification of overloaded property Post::$attributes has no effect (C:\wamp\www\yiiblog\protected\controllers\PostController.php:131)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (131)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:33:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (141)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:33:21 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(141): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:33:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (139)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:33:46 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(139): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:34:22 [error] [php] Undefined variable: file (C:\wamp\www\yiiblog\protected\controllers\PostController.php:135)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (135)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:34:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (139)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:34:31 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(139): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:36:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (139)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:36:30 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(139): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:38:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:38:41 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 13:41:07 [error] [exception.CException] CException: Property "PostController.updateImage" is not defined. in C:\Users\pedri\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\PostController.php(124): CComponent->__get('updateImage')
+#1 [internal function]: PostController->actionUpdate('42')
+#2 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#3 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#4 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#14 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 13:41:17 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function PostController::updateImage(), 0 passed in C:\wamp\www\yiiblog\protected\controllers\PostController.php on line 124 and exactly 1 expected in C:\wamp\www\yiiblog\protected\controllers\PostController.php:154
+Stack trace:
+#0 C:\wamp\www\yiiblog\protected\controllers\PostController.php(124): PostController->updateImage()
+#1 [internal function]: PostController->actionUpdate('42')
+#2 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#3 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#4 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#14 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 13:41:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (155)
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (124)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:41:23 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(155): CActiveRecord->save()
+#4 C:\wamp\www\yiiblog\protected\controllers\PostController.php(124): PostController->updateImage(Object(Post))
+#5 [internal function]: PostController->actionUpdate('42')
+#6 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#7 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#8 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#17 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#18 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 10:41:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 10:41:38 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 11:14:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42.
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 11:14:49 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null. The SQL statement executed was: UPDATE `posts` SET `id`=:yp0, `title`=:yp1, `image`=:yp2, `content`=:yp3, `tags`=:yp4, `create_time`=:yp5, `update_time`=:yp6, `author_id`=:yp7 WHERE `posts`.`id`=42 in C:\Users\pedri\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('42', Array)
+#2 C:\Users\pedri\yii\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\wamp\www\yiiblog\protected\controllers\PostController.php(140): CActiveRecord->save()
+#4 [internal function]: PostController->actionUpdate('42')
+#5 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#17 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=42
+---
+2021/12/06 14:18:20 [error] [php] Indirect modification of overloaded property Post::$attributes has no effect (C:\wamp\www\yiiblog\protected\controllers\PostController.php:132)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=42
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (132)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 14:25:19 [error] [php] Indirect modification of overloaded property Post::$attributes has no effect (C:\wamp\www\yiiblog\protected\controllers\PostController.php:131)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=28
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (131)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 15:18:00 [error] [php] Undefined index: Post (C:\wamp\www\yiiblog\protected\controllers\PostController.php:127)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=32
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (127)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 15:22:44 [error] [exception.Error] Error: Call to a member function save() on string in C:\wamp\www\yiiblog\protected\controllers\PostController.php:135
+Stack trace:
+#0 [internal function]: PostController->actionUpdate('32')
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=32
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=32
+---
+2021/12/06 15:22:57 [error] [exception.Error] Error: Call to a member function save() on array in C:\wamp\www\yiiblog\protected\controllers\PostController.php:135
+Stack trace:
+#0 [internal function]: PostController->actionUpdate('32')
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=32
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/update&id=32
+---
+2021/12/06 15:25:55 [error] [php] Indirect modification of overloaded property Post::$attributes has no effect (C:\wamp\www\yiiblog\protected\controllers\PostController.php:135)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=32
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (135)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:06:41 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (98)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 16:06:58 [error] [php] Indirect modification of overloaded property Post::$attributes has no effect (C:\wamp\www\yiiblog\protected\controllers\PostController.php:131)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=45
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (131)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 16:10:52 [error] [php] Undefined variable: image (C:\wamp\www\yiiblog\protected\controllers\PostController.php:133)
+Stack trace:
+#0 unknown(0): PostController->actionUpdate()
+#1 C:\Users\pedri\yii\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#2 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#5 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\Users\pedri\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#7 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\Users\pedri\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp\www\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php?r=post/update&id=45
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (133)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 16:11:14 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (135)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 16:11:34 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (135)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 16:11:46 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (135)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:13:14 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:13:19 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:13:26 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:13:38 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:14:06 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:14:12 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:14:19 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:15:12 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:15:22 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:15:30 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:15:39 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (142)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:17:05 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:17:20 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:17:31 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:17:37 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:19:56 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:20:03 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:20:12 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (140)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:20:41 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (98)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:20:41 [error] [exception.Error] Error: Call to a member function saveAs() on null in C:\wamp\www\yiiblog\protected\controllers\PostController.php:106
+Stack trace:
+#0 C:\Users\pedri\yii\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#1 C:\Users\pedri\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\Users\pedri\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\Users\pedri\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\Users\pedri\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\Users\pedri\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\Users\pedri\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\Users\pedri\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\Users\pedri\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\Users\pedri\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/create')
+#11 C:\Users\pedri\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\wamp\www\yiiblog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiiblog/index.php?r=post/create
+HTTP_REFERER=http://localhost/yiiblog/index.php?r=post/create
+---
+2021/12/06 13:25:14 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (141)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:29:28 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (141)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:29:38 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (141)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:29:51 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (141)
+in C:\wamp\www\yiiblog\index.php (13)
+2021/12/06 13:31:13 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in C:\wamp\www\yiiblog\protected\controllers\PostController.php (141)
+in C:\wamp\www\yiiblog\index.php (13)

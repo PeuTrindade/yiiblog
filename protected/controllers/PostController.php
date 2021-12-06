@@ -51,10 +51,15 @@ class PostController extends Controller
 	{
 		$post = $this->loadModel();
 		$coment = $this->newComent($post);
+		$post->reverseDate();
+
+		foreach ($post->coments as $key => $value) {
+			$value->reverseDate();
+		}
 
 		$this->render('view',array(
 			'model'=>$post,
-			'coment'=>$coment
+			'coment'=>$coment,
 		));
 	}
 
@@ -68,8 +73,8 @@ class PostController extends Controller
 
 		if(isset($_POST['Coment'])){
 			$coment->attributes = $_POST['Coment'];
-			date_default_timezone_set('America/Sao_Paulo');
-			$coment->create_time = date('y/m/d');
+			$coment->getCurrentDate();
+
 			if($post->addComent($coment)){
 				$this->refresh();
 			}
@@ -84,6 +89,7 @@ class PostController extends Controller
 	public function actionCreate()
 	{
 		$model=new Post;
+		$model->scenario = 'create';
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -96,7 +102,7 @@ class PostController extends Controller
 			$fileName = $random.'-'.$file;
 			$model->image = $fileName;
 
-			$this->getCurrentDate($model);
+			$model->getCurrentDate();
 			if($model->save()){
 				$file->saveAs('uploads/'.$fileName); 
 				$this->redirect(array('view','id'=>$model->id));
@@ -115,22 +121,25 @@ class PostController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+		$model=Post::model()->findByPk($id);
 		$image = $model->image;
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['Post']))
-		{
-			$model->attributes=$_POST['Post'];
-			$this->updateDate($model);
+		{   
+			$formAttributes = $_POST['Post'];
 			$file = CUploadedFile::getInstance($model, 'image');
-			if($file){
-				$model->image = $file;
-			} else {
-				$model->image = $image;
+
+			if(empty($formAttributes['image']) && !isset($file)){
+				$formAttributes['image'] = $image;
 			}
+
+			else if(isset($file)){
+				$formAttributes['image'] = $file;
+				$model->image = $file;
+			}
+
+			$model->attributes = $formAttributes;
+			$model->updateDate();
 
 			if($model->save()){
 				if(!empty($file)){
@@ -167,26 +176,26 @@ class PostController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
-	{
-		$criteria=new CDbCriteria(array(
-			'order'=>'update_time DESC',
-			'with'=>'comentCount',
-		));
-		if(isset($_GET['tag']))
-			$criteria->addSearchCondition('tags',$_GET['tag']);
+	// public function actionIndex()
+	// {
+	// 	$criteria=new CDbCriteria(array(
+	// 		'order'=>'update_time DESC',
+	// 		'with'=>'comentCount',
+	// 	));
+	// 	if(isset($_GET['tag']))
+	// 		$criteria->addSearchCondition('tags',$_GET['tag']);
 	 
-		$dataProvider=new CActiveDataProvider('Post', array(
-			'pagination'=>array(
-				'pageSize'=>5,
-			),
-			'criteria'=>$criteria,
-		));
+	// 	$dataProvider=new CActiveDataProvider('Post', array(
+	// 		'pagination'=>array(
+	// 			'pageSize'=>5,
+	// 		),
+	// 		'criteria'=>$criteria,
+	// 	));
 	 
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
-	}
+	// 	$this->render('index',array(
+	// 		'dataProvider'=>$dataProvider,
+	// 	));
+	// }
 
 	/**
 	 * Manages all models.
@@ -251,17 +260,6 @@ class PostController extends Controller
 	// 		return false;
 	// 	}
 	// }
-
-	private function getCurrentDate($model){
-		date_default_timezone_set('America/Sao_Paulo');
-	    $model->create_time = date('y/m/d');
-		$model->update_time = date('y/m/d');
-	}
-
-	private function updateDate($model){
-		date_default_timezone_set('America/Sao_Paulo');
-		$model->update_time = date('y/m/d');
-	}
 
 	protected function afterSave(){
 		parent::afterSave();

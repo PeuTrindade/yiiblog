@@ -7,7 +7,6 @@
 	<link rel='stylesheet' href='./css/header/header.css'></link>
 	<link rel='stylesheet' href='./css/footer/footer.css'></link>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
-
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>
@@ -23,7 +22,7 @@
 						array('label'=>'Sobre nós', 'url'=>array('/site/#sobre')),
 						array('label'=>'Contato', 'url'=>array('/site/#contato')),
 						array('label'=>'Login', 'url'=>array('/site/login'),'visible'=>!isset($_SESSION['logged'])),
-						array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=> isset($_SESSION['logged']))
+						array('label'=>'Logout', 'url'=>array('/site/logout'), 'visible'=> isset($_SESSION['logged']))
 					),
 				)); ?>
 				<img onClick='openMobileDisplay()' class='menuMobileDisabled' src='./images/menumobile.svg'/>
