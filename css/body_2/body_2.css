@@ -1,0 +1,279 @@
+.postsContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8rem;
+}
+
+.postsContainer h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #375D81;
+}
+
+.postsContainer h3 {
+    text-align: center;
+}
+
+.arrow {
+    width: 25px;
+    position: absolute;
+    left: 49.5%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+    animation: animeArrow 1s alternate-reverse infinite;
+}
+
+@keyframes animeArrow {
+    from {
+        transform: translateY(30%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.posts {
+    margin-top: 10rem;
+}
+
+.post {
+    display: flex;
+    margin-left: 3%;
+    margin-bottom: 2px solid black;
+    width: 95%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all ease .2s;
+}
+
+.post:hover {
+    box-shadow: 5px 5px 10px #C4D7ED;
+}
+
+.post img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.postInfo h4 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.postInfo a {
+    text-decoration: none;
+    color: black;
+    transition: all ease .2s;
+}
+
+.postInfo a:hover {
+    color: #375D81;
+}
+
+.postInfo p {
+    margin-left: 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sideBar {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 12rem;
+    margin-right: 4%;
+    background-color: #ffffff;
+    height: 30rem;
+    width: 30%;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #C4D7ED;
+}
+
+.search {
+    margin-top: .5rem;
+}
+
+.search input {
+    background-color: #e6e6e6;
+    height: 2rem;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: .2rem;
+    padding-left: .3rem;
+}
+
+.search button {
+    margin-top: .5rem;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+    background-color: #375D81;
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+    color: white;
+}
+
+.sideBar h3 {
+    float: left;
+    margin-top: 1rem;
+    color: #375D81;
+    margin-bottom: .5rem;
+}
+
+.tags {
+    list-style: none;
+    margin-top: 3rem;
+}
+
+.tag {
+    text-decoration: none;
+    color: black;
+}
+
+.tags li {
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.tagActive {
+    color: #375D81; 
+}
+
+.tags a:hover {
+    border-bottom: 2px solid #375D81;
+    width: 60%;
+    color: #375D81;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+#pageNavigation {
+    display: flex;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #375D81;
+}
+
+.pageDisabled {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: rgb(167, 167, 167);
+}
+
+.pageActive {
+    color: #375D81;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.leftArrow {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #375D81;
+    font-weight: bold;
+}
+
+.rightArrow {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #375D81;
+    font-weight: bold;
+}
+
+.filterTags {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.filterTags h4 {
+    font-weight:normal;
+}
+
+.filterTags button {
+    background-color: #375D81;
+    color: white;
+    display: inline-block;
+    padding: .2rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    cursor: pointer;
+    margin-left: .5rem;
+    border: none;
+    outline: none;
+}
+
+.pager {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.yiiPager li {
+    font-size: 1rem;
+}
+
+.deleteTagsDisabled {
+    display: none;
+}
+
+.deleteTagsActive {
+    background-color: #375D81;
+    color: white;
+    display: inline-block;
+    padding: .2rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width:890px){
+    .content {
+        flex-direction: column;
+    }
+    .sideBar {
+        margin-top: 3rem;
+        margin-left: 3%;
+        height: 20rem;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:467px){
+    .post img {
+        width: 100px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .post img {
+        display: none;
+    }
+}
+
