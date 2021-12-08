@@ -1,8 +1,8 @@
 <?php
 /* @var $this PostController */
 /* @var $model Post */
-
 Yii::app()->name = "Conecta";
+$this->pageTitle= Yii::app()->name . ' - Publicação';
 
 $postId = CHtml::encode($model->id);
 $postTitle = CHtml::encode($model->title);

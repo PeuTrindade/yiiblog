@@ -53,3 +53,10 @@
     color: white;
     cursor: pointer;
 }
+
+.updateImg {
+    width: 500px;
+    margin-top: 2rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
