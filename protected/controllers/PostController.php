@@ -121,7 +121,7 @@ class PostController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$model=Post::model()->findByPk($id);
+		$model=$this->loadModel();
 		$image = $model->image;
 
 		if(isset($_POST['Post']))
